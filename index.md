@@ -12,6 +12,6 @@ This website aims to foster a community where developers can share, explore, and
 
 Here is a list of projects currently hosted on this website:
 
-| Project Name | Project Description | Commits Link |
+| Project Name | Project Description | Commits and Prompts |
 | ------------ | ------------------- | ------------ |
-| [GoPool](https://github.com/devchat-ai/gopool) | GoPool is a high-performance, feature-rich, and easy-to-use worker pool library for Golang. | [Commits](./devchat-ai/gopool/commits) |
+| [GoPool](https://github.com/devchat-ai/gopool) | GoPool is a high-performance, feature-rich, and easy-to-use worker pool library for Golang. | [Commits and Prompts](./devchat-ai/gopool/) |
