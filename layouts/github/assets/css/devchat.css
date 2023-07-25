@@ -1,0 +1,25 @@
+#给-gpt-的-prompts {
+    border-bottom: none;
+}
+
+.markdown-body h2 {
+    border-bottom: none;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.markdown-body h2 img {
+    height: 32px;
+    width: 32px;
+    margin: 0;
+}
+
+.markdown-body h2 strong {
+    font-size: 18px;
+    margin: 0 0 0 10px;
+}

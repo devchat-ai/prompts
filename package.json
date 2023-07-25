@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "generate": "generate-md --layout ./layouts/github --input ./devchat-ai --output ./dist && generate-md --layout ./layouts/github --input index.md --output ./dist",
+    "clean": "rm -rf dist/*"
+  },
+  "dependencies": {
+    "markdown-styles": "^3.2.0"
+  }
+}
