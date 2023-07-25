@@ -35,9 +35,9 @@ jobs:
 
       # Set up Node.js environment
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18'
 
       # Install dependencies and build the project
       - name: Install dependencies and build
