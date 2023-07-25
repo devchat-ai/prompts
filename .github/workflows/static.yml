@@ -1,0 +1,62 @@
+# Workflow name
+name: Deploy static content to Pages
+
+# Trigger conditions: push to the devchat-styles branch or manually trigger
+on:
+  push:
+    branches: ["devchat-styles"]
+  workflow_dispatch:
+
+# Set the permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Set concurrency: only allow one deployment at a time, skip runs queued between the run in progress and the latest queued run
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Define jobs
+jobs:
+  deploy:
+    # Set environment variables
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    # Set the running environment
+    runs-on: ubuntu-latest
+    # Define steps
+    steps:
+      # Checkout code
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Set up Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      # Install dependencies and build the project
+      - name: Install dependencies and build
+        run: |
+          npm ci
+          npm run generate
+
+      # Set up Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      # Upload build artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # Set the path of the build artifact to 'dist'
+          path: 'dist'
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
