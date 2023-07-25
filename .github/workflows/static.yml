@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 # Trigger conditions: push to the devchat-styles branch or manually trigger
 on:
   push:
-    branches: ["devchat-styles"]
+    branches: ["main"]
   workflow_dispatch:
 
 # Set the permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
