@@ -23,3 +23,15 @@
     font-size: 18px;
     margin: 0 0 0 10px;
 }
+
+details {
+    margin: 5px 0;
+    padding: 0 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+details summary {
+    padding: 10px 0;
+    cursor: pointer;
+}
