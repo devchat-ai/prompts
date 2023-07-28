@@ -5,7 +5,6 @@
 ## Commits
 
 | Commit | Commit Hash | Author | Prompts with GPT | 给 GPT 的 Prompts |
-
 |:-------------|:-------------|:-------------|:-------------|:------------|
 | [Update go get command in readme](https://github.com/devchat-ai/gopool/commit/d1a07e8aa342f8df3e82d661198723bcc052dee5)                                        | d1a07e8       | [Daniel Hu](https://github.com/daniel-hutao) | [Prompts with GPT](./commits/d1a07e8aa342f8df3e82d661198723bcc052dee5.md) | [给 GPT 的 Prompts](./commits/d1a07e8aa342f8df3e82d661198723bcc052dee5_zh.md) |
 | [Update task examples in README.md and README_zh.md](https://github.com/devchat-ai/gopool/commit/b109a0338c03b28e3d6b23bb7c54cb9853b71ffa)                     | b109a03       | [Daniel Hu](https://github.com/daniel-hutao) | [Prompts with GPT](./commits/b109a0338c03b28e3d6b23bb7c54cb9853b71ffa.md) | [给 GPT 的 Prompts](./commits/b109a0338c03b28e3d6b23bb7c54cb9853b71ffa_zh.md) |
