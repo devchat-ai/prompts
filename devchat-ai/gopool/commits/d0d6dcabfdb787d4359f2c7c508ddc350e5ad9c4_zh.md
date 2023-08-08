@@ -70,7 +70,7 @@ func (w *Worker) start() {
 2. Worker 中保留一个容量为1的 Task Channel；
 3. AddTask 需要从 GoPool.Workers 中检索出来一个空闲的 Worker，当 Worker 完成 Task 处理后，需要能够被放回 GoPool，因此你需要考虑将 workers 实现成一个栈，添加对应的入栈出栈方法；
 
-## ![avatar](../../assets/icons/avatar_devchat.svg) **DevChat**
+## ![avatar](../../assets/icons/avatar_devchat.svg) **[DevChat](https://marketplace.visualstudio.com/items?itemName=merico.devchat)**
 
 根据你的反馈，我对代码进行了一些修改。以下是修改后的代码：
 
